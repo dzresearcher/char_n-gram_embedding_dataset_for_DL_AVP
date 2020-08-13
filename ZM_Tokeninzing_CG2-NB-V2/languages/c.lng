@@ -1,0 +1,41 @@
+#c
+
+<Comment_Line>
+//
+</Comment_Line> 
+
+<Comment_Start>
+/*
+</Comment_Start>
+
+<Comment_End>
+*/
+</Comment_End>
+
+<Key_Words>
+if else switch case default break goto return for while do continue typedef sizeof NULL
+</Key_Words>
+
+<Types>
+void struct union enum char short int long double float signed unsigned const static extern auto register volatile
+</Types>
+
+<Control_Instructions> // pour mesurer la complexité cyclomatique
+if while do switch
+</Control_Instructions>
+
+<Separators>  // a verifier
+\t , ; : + - * / & : < > % ? ( ) [ ] { } =
+</Separators>
+
+<Separators2>
+:: -- ++ << >> || && == != ** => =< += -= *= /=
+</Separators2>
+
+<Separators3>
+--- +++
+</Separators3>
+
+<String>
+"
+</String>

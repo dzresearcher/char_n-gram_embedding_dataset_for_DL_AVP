@@ -1,0 +1,100 @@
+#java
+
+<Comment_Line>
+//
+</Comment_Line> 
+
+<Comment_Start>
+/*
+</Comment_Start>
+
+<Comment_End>
+*/
+</Comment_End>
+
+<Control_Commands> // pour mesurer la complexité cyclomatique
+if for while do switch && || 
+</Control_Commands>
+
+<Separators>  // a verifier
+ , ; : + - * / & : < > % ? ( ) [ ] { } = # ! . ~ | 
+</Separators>
+
+<Separators2>
+:: -- ++ << >> || && == != ** >= <= += -= *= /= -> () %= &= ^= |= 
+</Separators2>
+
+<Separators3>
+... <<= >>= 
+</Separators3>
+
+<String_Markup>
+"
+</String_Markup>
+
+<Befor_String_Markup>
+\
+</Befor_String_Markup>
+
+<Char_Markup>
+'
+</Char_Markup>
+
+<Befor_Char_Markup>
+\
+</Befor_Char_Markup>
+
+//----------------------------halstead operators
+<Operators>
+! != % %= & && || &= ( ) * ** *= + ++ += , ; - -- -= -> . ... / /= : :: < << <<= <= = = = > >= >> >>= ? [ ] ^ ^= { } | |= ~ #
+</Operators>
+
+<Key_Words>
+asm break case class continue default delete do else enum for goto if new operator private protected public return sizeof struct switch this union while namespace using try catch throw const_cast static_cast dynamic_cast reinterpret_cast typeid template explicit true false typename
+</Key_Words>
+
+<Type_Qualificators>
+const friend volatile
+</Type_Qualificators>
+
+<Storage_Class_Specificators>
+auto extern inlin register static typedef virtual mtuable 
+</Storage_Class_Specificators>
+
+//---------------------------- END :  halstead operators
+
+// halstead operands ----------------------------------------------
+
+<Type_Specificators>
+bool char double float int long short signed unsigned void
+</Type_Specificators>
+
+// END : halstead operands -----------------------------------------
+
+// Regular Expressions ----------------------------------------------
+
+<Integer_Number_Regex> // Integer numbers
+[+-]?[0-9]+ 
+</Integer_Number_Regex>
+
+<Real_Number_Regex> // 
+[-+]?[0-9]+(\.[0-9]+)?([e|E][-+]?[0-9]+)? 
+</Real_Number_Regex>
+
+<Octal_Number_Regex> // Octal base numbers : à refaire
+0[1-7][0-7]* 
+</Octal_Number_Regex>
+
+<Hexadecimal_Number_Regex> // Hexadecimal base numbers : à refaire
+0[xX][0-9a-fA-F]+ 
+</Hexadecimal_Number_Regex>
+
+<Identifier_Regex> // Identificator :  à vérifier
+[a-zA-Z_][a-zA-Z0-9_]* 
+</Identifier_Regex>
+
+// END : Regular Expressions -----------------------------------------
+
+<Begin_End>  // pascal : [bB][eE][gG][iI][nN] [eE][nN][dD][;]?
+\{ \}
+</Begin_End>
